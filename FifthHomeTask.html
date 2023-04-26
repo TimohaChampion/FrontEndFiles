@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeTask</title>
+    <style>
+      .container {
+        margin: 50px 450px;
+      }
+      .general {
+        height: 600px;
+        width: 1000px;
+        background-color: rgb(149, 210, 151);
+        border-radius: 25px;
+        padding: 50px 0px;
+      }
+
+      .card__number,
+      .card__name {
+        padding-left: 50px;
+        font-size: 24px;
+        background-color: rgb(149, 210, 151);
+        margin-bottom: 50px;
+      }
+
+      .block1 {
+        margin-left: -50px;
+        padding-left: 50px;
+        width: auto;
+        height: auto;
+        display: block;
+      }
+      .block2 {
+        padding-left: 50px;
+        width: auto;
+        height: auto;
+        display: flex;
+      }
+      .first {
+        font-size: 24px;
+        color: rgb(149, 210, 151);
+      }
+      .all {
+        font-size: 15px;
+        padding-left: 20px;
+        height: 40px;
+        width: 150px;
+        background-color: rgb(167, 206, 206);
+        border: none;
+        border-bottom: 1px solid black;
+      }
+      .second {
+        margin-left: 50px;
+        font-size: 24px;
+        color: rgb(90, 148, 148);
+      }
+	  .first{
+		
+        font-size: 24px;
+        color: rgb(90, 148, 148);
+	  }
+
+      #rectangle {
+        z-index: 10;
+        font: 24px;
+        width: 800px;
+        height: 70px;
+        background-color: orange;
+        margin: 50px -30px;
+      }
+      .details {
+        position: absolute;
+        margin: 24px 80px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="general">
+        <div id="rectangle">
+          <div class="details">Credit Card Detalis</div>
+        </div>
+        <div class="block1">
+          <div class="card__number">
+            Card Number <br />
+            <input
+              type="text"
+              name=""
+              id=""
+			  required
+              style="outline: none"
+              placeholder="1234 5678 9012 3456"
+              class="all"
+            />
+          </div>
+          <div class="card__name">
+            Name on Card <br />
+            <input
+              type="text"
+              name=""
+			  required
+              id=""
+              style="outline: none"
+              placeholder="Name Suname"
+              class="all"
+            />
+          </div>
+        </div>
+        <div class="block2">
+          <div class="first">
+            Expry Date <br />
+            <input 
+			  type="datetime"
+			  name=""
+			  id=""
+			  required 
+			  placeholder="02" 
+			  class="all"
+		    />
+			
+            <input
+              type="datetime"
+              name=""
+			  required
+              id=""
+              placeholder="2017"
+              class="all"
+            />
+          </div>
+          <div class="second">
+            CVV/CVN <br />
+            <input
+              type="password"
+              name=""
+			  required
+              id=""
+              placeholder="***"
+              class="all"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
