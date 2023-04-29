@@ -1,0 +1,166 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+html{
+   font-size: 15px;
+}
+body{
+   font-family: 'Poppins', Arial, Helvetica, sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 1rem;
+   line-height: 5rem;
+   color: #594848e6;
+}
+.container{
+   width:1440px;
+   margin:0 auto;
+
+}
+/*header*/
+.header{
+   background-color: azure;
+   height: 74px;
+   align-items: center;
+}
+.header__nav{
+   display: flex;
+
+}
+.header__menu{
+   display: flex;
+   gap:3vw;
+   margin-left: 150px;
+   list-style: none;
+}
+.header__menu a{
+   text-decoration: none;
+   color:black;
+ 
+}
+.header__menu a:hover{
+   text-decoration-line:underline;
+   text-decoration-color: red;
+   text-decoration-style: dotted;
+
+}
+/*promo*/
+.promo{
+   background: black url(../img/bg.jpg) no-repeat;
+   background-size: cover;
+   height: 90vh;
+   display: flex;
+   justify-content: center;/*horiz*/
+   align-items: center;/*vertic*/
+}
+.promo__text{
+   color:aliceblue;
+   max-width: 650px;
+}
+.promo__text h1{
+   font-style: normal;
+font-weight: 400;
+font-size: 70px;
+line-height: 85px;
+/* identical to box height, or 122% */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+.button{
+   width:155px;
+   height:56px;
+   border-radius: 0;
+   border:0px;
+   outline: none;
+   background: orangered;
+   color:white;
+   font-size: 14px;
+   text-align: center;
+   
+}
+.button-fill{
+   background-color: rgb(13, 255, 0);
+   outline: 1px solid orange;
+}
+.button-outline{
+  outline: 1px solid orange;
+  background: transparent;/*prozracnost'*/
+   
+}
+.groupButtons{
+   
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   gap:2rem;
+   margin-top: 2rem;
+}
+.button:hover{
+ cursor: pointer;
+ box-shadow:0 0 8px rgb(128, 128, 128);
+}
+/*about*/
+h2{
+   font-style: normal;
+font-weight: 400;
+font-size: 150px;
+line-height: 145px;
+/* identical to box height, or 97% */
+
+letter-spacing: 0.1px;
+
+color: #a91111;
+}
+.left{
+   position: relative;
+   left:-100px;
+}
+.about__group{
+   display: flex;
+   justify-content: space-around;
+
+}
+.about__group>div{
+   width:40%;
+}
+.about__header{
+   font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 54px;
+/* or 135% */
+
+color: #333333;
+}
+.large-tx{
+   font-size: 1.2rem;
+}
+.black{
+  color:#222;
+
+}
+.mb-2{
+ margin-bottom: 3rem;
+}
+.pictures{
+   display: flex;
+   
+
+}
+.first, .second, .third{
+
+   display: block;
+   
+   text-align: center;
+   align-content: center;
+   justify-content: center;
+   
+}
+.pictures p{
+   width:400px;
+   line-height: 24px;
+}
